@@ -6,10 +6,8 @@ body {
 	padding: 100px 100px 0; /* top right/left bottom */
 }
 
-.container {
-	background-color: white;
-}
-
-.navbar {
-	position: relative;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
