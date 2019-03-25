@@ -30,49 +30,24 @@
 <body>
 	<nav class="navbar justify-content-center stick-top navbar-expand-lg stroke home">
 		<ul>
-			<li>
-				<a class="nav-item" href="{% url 'home:index' %}">Home</a>
-			</li>
-			<li>
-				<a class="nav-item">Projects</a>
-			</li>
-			<li>
-				<a class="nav-item">Music</a>
-			</li>
-			<li id="contact">
-				<a class="nav-item">Contact</a>
-			</li>
+			{% for item in menu %}
+				<li>
+					<a class="nav-item" href="{% url item.1 %}">{{ item.0 }}</a>
+				</li>
+			{% endfor %}
 		</ul>
 	</nav>
 
 	<!-- TODO: Change img src to dark images on hover with JS. !-->
 	<nav class="navbar fixed-left fixed-bottom social">
 		<ul>
-			<li>
-				<a class="nav-item" href="https://www.facebook.com/matt.kong2" target="_blank">
-					<img class="social" src="{% static 'images/facebook_light.png' %}" id="facebook">
-				</a>
-			</li>
-			<li>
-				<a class="nav-item" href="https://www.instagram.com/mat_kong/" target="_blank">
-					<img class="social" src="{% static 'images/instagram_light.png' %}" id="instagram">
-				</a>
-			</li>
-			<li>
-				<a class="nav-item" href="https://www.github.com/mkong8" target="_blank">
-					<img class="social" src="{% static 'images/github_light.png' %}" id="github">
-				</a>
-			</li>
-			<li>
-				<a class="nav-item" href="https://www.youtube.com/channel/UCnDpGh9GcAbh4DANwKNo4BA?view_as=subscriber" target="_blank">
-					<img class="social" src="{% static 'images/youtube_light.png' %}" id="youtube">
-				</a>
-			</li>
-			<li>
-				<a class="nav-item" href="https://www.linkedin.com/in/mattkong8/" target="_blank">
-					<img class="social" src="{% static 'images/linkedin_light.png' %}" id="linkedin">
-				</a>
-			</li>
+			{% for link in social %}
+				<li>
+					<a class="nav-item" href="{{ link.1 }}" target="_blank">
+						<img class="social" src="{% static 'images/'|add:link.0|add:'_light.png' %}" id="{{ link.0 }}">
+					</a>
+				</li>
+			{% endfor %}
 		</ul>
 	</nav>
 
