@@ -9,6 +9,7 @@
 		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
 		crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
@@ -26,13 +27,53 @@
 </head>
 
 <body>
-	<nav class="navbar navbar navbar-expand-lg navbar-dark justify-content-center">
+	<nav class="navbar justify-content-center stick-top navbar-expand-lg stroke home">
 		<ul>
 			<li>
-				<a class="navbar-brand" href="{% url 'home:index' %}">HOME</a>
+				<a class="nav-item" href="{% url 'home:index' %}">HOME</a>
+			</li>
+			<li>
+				<a class="nav-item">Projects</a>
+			</li>
+			<li>
+				<a class="nav-item">About</a>
+			</li>
+			<li id="contact">
+				<a class="nav-item">Contact</a>
 			</li>
 		</ul>
 	</nav>
+
+	<nav class="navbar fixed-left fixed-bottom social">
+		<ul>
+			<li>
+				<a class="nav-item" href="https://www.facebook.com/matt.kong2" target="_blank">
+					<img class="social" src="{% static 'images/facebook_light.png' %}" id="facebook">
+				</a>
+			</li>
+			<li>
+				<a class="nav-item" href="https://www.instagram.com/mat_kong/" target="_blank">
+					<img class="social" src="{% static 'images/instagram_light.png' %}" id="instagram">
+				</a>
+			</li>
+			<li>
+				<a class="nav-item" href="https://www.github.com/mkong8" target="_blank">
+					<img class="social" src="{% static 'images/github_light.png' %}" id="github">
+				</a>
+			</li>
+			<li>
+				<a class="nav-item" href="https://www.youtube.com/channel/UCnDpGh9GcAbh4DANwKNo4BA?view_as=subscriber" target="_blank">
+					<img class="social" src="{% static 'images/youtube_light.png' %}" id="youtube">
+				</a>
+			</li>
+			<li>
+				<a class="nav-item" href="https://www.linkedin.com/in/mattkong8/" target="_blank">
+					<img class="social" src="{% static 'images/linkedin_light.png' %}" id="linkedin">
+				</a>
+			</li>
+		</ul>
+	</nav>
+
 </body>
 
 </html>

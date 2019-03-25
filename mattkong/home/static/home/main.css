@@ -3,11 +3,73 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 100px 100px 0; /* top right/left bottom */
+	padding: 100px 0 0; /* top right/left bottom */
+	font-family: 'Montserrat';
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav ul {
+  	list-style-type: none;
+  	text-align: center;
+}
+
+nav.home ul li {
+	display: inline-block;
+	color: white;
+}
+
+nav.home ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0 50px;
+}
+
+nav.social {
+  height: 400px;
+}
+
+nav.social ul li a {
+  display: block;
+  margin: 15px 0;
+}
+
+/* Hover effect for main navbar */
+nav.home ul li a,
+nav.home ul li a:after,
+nav.home ul li a:before {
+  transition: all .5s;
+}
+nav.home ul li a:hover {
+  color: black;
+}
+/* Underline animation */
+nav.stroke.home ul li a {
+  position: relative;
+}
+nav.stroke.home ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+nav.stroke.home ul li a:hover:after {
+  width: 100%;
+}
+
+img.social {
+	width: 2.5em;
+	height: auto;
 }
