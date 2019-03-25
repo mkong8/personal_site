@@ -123,3 +123,10 @@ img.social, img.arrow {
   padding: 5% 30%;
   font-size: 1em;
 }
+
+.about-me .media img {
+  width: 15em;
+  height: auto;
+  display: block;
+  margin: auto;
+}
