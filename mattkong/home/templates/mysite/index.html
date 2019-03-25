@@ -36,7 +36,7 @@
 				<a class="nav-item">Projects</a>
 			</li>
 			<li>
-				<a class="nav-item">About</a>
+				<a class="nav-item">MUSIC</a>
 			</li>
 			<li id="contact">
 				<a class="nav-item">Contact</a>
@@ -44,6 +44,7 @@
 		</ul>
 	</nav>
 
+	<!-- TODO: Change img src to dark images on hover with JS. !-->
 	<nav class="navbar fixed-left fixed-bottom social">
 		<ul>
 			<li>
@@ -73,6 +74,33 @@
 			</li>
 		</ul>
 	</nav>
+
+	<div class="container intro">
+	  <h1>MATT KONG</h1>
+	  <hr>
+	  <br>
+	  <p>Welcome to my life!</p>
+	  <p>Take a look around, check out my projects, listen to my music.</p>
+	</div>
+
+	<!-- TODO: Animate the down arrow on hover. !-->
+	<div class="container read-more">
+		<a href="#about-me">READ MORE ABOUT ME</a>
+		<br>
+		<a href="#about-me">
+			<img class="arrow" src="{% static 'images/double_down_light.png' %}" id=doubledown>
+		</a>
+	</div>
+
+	<div class="container about-me" id="about-me">
+		<h1>ABOUT ME</h1>
+		<hr>
+		<br>
+		<p>I'm currently a student at the University of Michigan studying the wonders of computers. Almost all of my computer-related knowledge comes from academia and past work experience, but I've never had to time to ping my curiosity and experiment with these tools I've picked up. I'm at a point as an engineer where I'm trying to navigate the endless world of software and pinpoint the topics that peak my interest. I've decided to push aside the excuses and distractions to get a start on figuring out what I want to spend my time researching and building, so stay tuned for pending projects.</p>
+		<br>
+		<p>AFK, I'm a fool for music. I dabble with the fine art of guitar and vocals - check out some of my music too!</p>
+
+	</div>
 
 </body>
 

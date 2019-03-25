@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	background: url("/static/images/background-mts.jpg");
 	background-attachment: fixed;
@@ -7,13 +11,9 @@ body {
 	font-family: 'Montserrat';
 }
 
-a, a:hover, a:focus {
-    text-decoration: none;
-}
-
 nav ul {
-  	list-style-type: none;
-  	text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 nav.home ul li {
@@ -32,7 +32,8 @@ nav.home ul li a {
 }
 
 nav.social {
-  height: 400px;
+  height: 20%;
+  width: 10%;
 }
 
 nav.social ul li a {
@@ -69,7 +70,49 @@ nav.stroke.home ul li a:hover:after {
   width: 100%;
 }
 
-img.social {
+img.social, img.arrow {
 	width: 2.5em;
 	height: auto;
+}
+
+.container {
+  color:white;
+}
+
+.intro {
+  width: 50%; 
+  height: 30%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-size: 1.25em;
+}
+
+.read-more {
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 190%; left: 0; bottom: 0; right: 0;
+}
+
+.read-more a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.read-more:hover a {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  color: black;
+}
+
+.about-me {
+  height: 100%;
+  position: absolute;
+  top: 100%; left: 0; bottom: 0; right: 0;
+  padding: 10% 10px;
+  font-size: 1.25em;
 }
