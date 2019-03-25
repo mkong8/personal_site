@@ -9,13 +9,11 @@
 		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
 		crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
 		crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	</script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
 		crossorigin="anonymous">
 	</script>
@@ -23,20 +21,23 @@
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
 		crossorigin="anonymous">
 	</script> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
 	<title>Matt Kong - www.mattkong.com</title>
+	<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
 </head>
 
 <body>
 	<nav class="navbar justify-content-center stick-top navbar-expand-lg stroke home">
 		<ul>
 			<li>
-				<a class="nav-item" href="{% url 'home:index' %}">HOME</a>
+				<a class="nav-item" href="{% url 'home:index' %}">Home</a>
 			</li>
 			<li>
 				<a class="nav-item">Projects</a>
 			</li>
 			<li>
-				<a class="nav-item">MUSIC</a>
+				<a class="nav-item">Music</a>
 			</li>
 			<li id="contact">
 				<a class="nav-item">Contact</a>
@@ -85,21 +86,22 @@
 
 	<!-- TODO: Animate the down arrow on hover. !-->
 	<div class="container read-more">
-		<a href="#about-me">READ MORE ABOUT ME</a>
+		<a href="#more">READ MORE ABOUT ME</a>
 		<br>
-		<a href="#about-me">
+		<a href="#more">
 			<img class="arrow" src="{% static 'images/double_down_light.png' %}" id=doubledown>
 		</a>
 	</div>
 
-	<div class="container about-me" id="about-me">
-		<h1>ABOUT ME</h1>
-		<hr>
-		<br>
-		<p>I'm currently a student at the University of Michigan studying the wonders of computers. Almost all of my computer-related knowledge comes from academia and past work experience, but I've never had to time to ping my curiosity and experiment with these tools I've picked up. I'm at a point as an engineer where I'm trying to navigate the endless world of software and pinpoint the topics that peak my interest. I've decided to push aside the excuses and distractions to get a start on figuring out what I want to spend my time researching and building, so stay tuned for pending projects.</p>
-		<br>
-		<p>AFK, I'm a fool for music. I dabble with the fine art of guitar and vocals - check out some of my music too!</p>
-
+	<div class="container more" id="more">
+		<div class="container about-me">
+			<h1>ABOUT ME</h1>
+			<hr>
+			<br>
+			<p>I'm currently a student at the University of Michigan studying the wonders of computers. Almost all of my computer-related knowledge comes from academia and past work experience, but I've never had to time to ping my curiosity and experiment with these tools I've picked up. I'm at a point as an engineer where I'm trying to navigate the endless world of software and pinpoint the topics that peak my interest. I've decided to push aside the excuses and distractions to get a start on figuring out what I want to spend my time researching and building, so stay tuned for pending projects.</p>
+			<br>
+			<p>AFK, I'm a fool for music. I dabble with the fine art of guitar and vocals - check out some of my music too!</p>
+		</div>
 	</div>
 
 </body>

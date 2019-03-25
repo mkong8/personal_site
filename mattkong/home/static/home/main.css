@@ -109,10 +109,16 @@ img.social, img.arrow {
   color: black;
 }
 
-.about-me {
+.more {
   height: 100%;
   position: absolute;
   top: 100%; left: 0; bottom: 0; right: 0;
-  padding: 10% 10px;
+  padding: 10% 30px;
   font-size: 1.25em;
+  
+}
+
+.about-me {
+  color: white;
+  background-color: rgba(85,85,85,0.6);
 }
