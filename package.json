@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./mattkong/home/src/index.js --output ./mattkong/home/static/js/main.js",
-    "build": "webpack --mode production ./mattkong/home/src/index.js --output ./mattkong/mysite/static/js/main.js"
+    "dev": "webpack --mode development ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/js/main.js",
+    "build": "webpack --mode production ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/js/main.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,6 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "jquery": "^1.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
