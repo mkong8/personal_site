@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/js/main.js",
-    "build": "webpack --mode production ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/js/main.js"
+    "dev": "webpack --mode development ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./mattkong/frontend/src/index.js --output ./mattkong/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,8 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
