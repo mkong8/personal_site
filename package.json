@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./mattkong/mysite/src/index.js --output ./mattkong/mysite/static/mysite/main.js",
-    "build": "webpack --mode production ./mattkong/mysite/src/index.js --output ./mattkong/mysite/static/mysite/main.js"
+    "dev": "webpack --mode development ./mattkong/home/src/index.js --output ./mattkong/home/static/js/main.js",
+    "build": "webpack --mode production ./mattkong/home/src/index.js --output ./mattkong/mysite/static/js/main.js"
   },
   "repository": {
     "type": "git",
