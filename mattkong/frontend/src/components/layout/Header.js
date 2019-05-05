@@ -4,19 +4,12 @@ export default class Header extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			items: [],
+			items: [
+				{"name": "home", "url": ""}, 
+				{"name": "projects", "url": ""}, 
+				{"name": "contact", "url": ""},
+			]
 		};
-	}
-
-	componentWillMount() {
-		fetch("/api/socialmedia/")
-		.then(res => res.json())
-		.then(result => {
-			this.setState({
-				items: result,
-				isLoaded: true
-			});
-		});
 	}
 
 	render() {
@@ -26,8 +19,8 @@ export default class Header extends Component {
 				<ul>
 					{items.map(item => (
 						<li key={item.name}>
-							<a className="nav-item" href={item.link}>
-								<img className="social" src="{% static 'images/'|add:{item.name}|add:'_light.png' %}" id={item.name} />
+							<a className="nav-item" href={item.url}>
+								{item.name}
 							</a>
 						</li>
 					))}
