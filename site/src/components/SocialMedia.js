@@ -13,7 +13,7 @@ export default class SocialMedia extends Component {
             { 
                 method: 'get',
                 headers: new Headers({
-                    'Authorization': 'Token ' + process.env.REACT_APP_TOKEN
+                    'Authorization': 'Token ' + process.env.REACT_APP_API_TOKEN
                 })
             }
         )
