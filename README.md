@@ -14,6 +14,17 @@ Backend (Python):
 Docker:
     Postgres:
     - docker pull postgres (pull image from dockerhub)
-    - /bin/run-postgres script (default superuser is postgres)
-    - docker exec -it <container name> /bin/bash
+    - /bin/run-postgres (default superuser is postgres)
+    - docker exec -it <CONTAINER NAME> /bin/bash
     - psql -U postgres
+
+    API:
+    - cd backend
+    - docker build .
+    - /bin/run-api
+
+    Debug:
+    - docker logs <CONTAINER ID>
+
+Docker-Compose:
+    - docker-compose up -d --build
