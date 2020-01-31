@@ -25,7 +25,7 @@ SECRET_KEY = ')l+(s)s8ydlvqhiaarv1m-5a8z8ql(@_a8t^7b3s=ks91-(_*z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.99.101']
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'ASDFqwer1234',
-        'HOST': 'db',
+        'HOST': os.environ['DB_HOST'],
         'PORT': 5432,
     }
 }
